@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration From</title>
+    <style>
+        body{
+            font-size: medium;
+            background: linear-gradient(135deg,#189070,#0a1e5a);
+            box-sizing: border-box;
+        }
+        h1{
+            color: #333;
+            font-size: 30px;
+            font:  sans-serif;
+        }
+        #Name:focus{ 
+            background-color: aqua;
+        } 
+        #email:focus{ 
+            background-color: aqua;
+        } 
+        
+    </style>
+</head>
+<body>
+    <h1>Write a information about Yourself</h1>
+    <h5>Enter Your Name</h5>
+    <input type="text" id="Name" name="Username"  placeholder="Enter Your Name"><br><br><!--Input element-->
+    <h5>Enter Your Email</h5>
+    <input type="email" id="email" name="Email ID"  placeholder="Enter Your Email" required><br><br>
+    <h5>Enter Your Gender</h5>
+    <label>Gender:</label>
+    <input type="radio" name="Gender" value="Male">Male<br><br>
+    <input type="radio" name="Gender" value="Female">Female<br><br>
+    <label for="language">Language:</label>
+    <select id="Language" name="Language">
+    <option value="Select Language">Select Language</option>
+    <option value="English">English</option>
+    <option value="Marathi">Marathi</option>
+    <option value="Hindi">Hindi</option>
+    <option value="Tamil">Tamil</option>
+    </select><br><br>
+    <label for="Your Answer">Write Your Answer</label><br><br>
+    <textarea name="Answer" id="stdAnswer" rows="5" cols="20" placeholder="Enter you Answer"></textarea><br><br>
+    <input type="submit" value="submit">
+</body>
+</html>
