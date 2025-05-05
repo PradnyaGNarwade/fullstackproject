@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration From</title>
+</head>
+<body>
+    <h1>Write a information about Yourself</h1>
+    <h5>Enter Your Name</h5>
+    <input type="text" id="Name" name="Username" required><br><br><!--Input element-->
+
+    <h5>Enter Your Email</h5>
+    <input type="email" id="email" name="Email ID" required><br><br>
+
+    <h5>Enter Your Date of birth</h5>
+    <input type="dob" id="dob" name="Date of Birth" required><br><br>
+
+    <h5>Enter Your Address</h5>
+    <input type="address" id="address" name="Address" required><br><br>
+
+    <label for="contact">Contact Number:</label><br>
+    <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+   
+    <h5>Enter Your Gender</h5>
+    <label>Gender:</label>
+    <input type="radio" name="Gender" value="Male">Male<br><br>
+    <input type="radio" name="Gender" value="Female">Female<br><br>
+
+    
+    <label for="language">Language:</label>
+    <select id="Language" name="Language">
+    <option value="Select Language">Select Language</option>
+    <option value="English">English</option>
+    <option value="Marathi">Marathi</option>
+    <option value="Hindi">Hindi</option>
+    <option value="Tamil">Tamil</option>
+    </select><br><br>
+
+    <label for="Course">Course:</label>
+    <select id="Course" name="Course">
+    <option value="Select Course">Select Course</option>
+    <option value="bsc">Bsc</option>
+    <option value="bca">BCA</option>
+    <option value="bcom">BCom</option>
+    <option value="bba">BBA</option>
+    </select><br><br>
+
+    <label for="Your Answer">Write Your Answer</label><br><br>
+    <textarea name="Answer" id="stdAnswer" rows="5" cols="20"></textarea><br><br>
+    <input type="submit" value="submit">
+</body>
+</html>

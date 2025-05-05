@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Table</title>
+</head>
+<body>
+    
+  <header>
+    <h1>Student Marks</h1>
+  </header>
+
+  <main>
+    <form action="/submit_marks" method="post">
+      
+      <!-- Student Info -->
+      <section>
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required><br><br>
+
+        <label for="rollNo">Roll Number:</label>
+        <input type="text" id="rollNo" name="rollNo" required><br><br>
+
+        <label for="class">Class:</label>
+        <select id="class" name="class" required>
+          <option value="">--Select--</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select><br><br>
+      </section>
+
+      <!-- Marks Table -->
+      <section>
+        <table border="1" cellpadding="10">
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Marks Obtained</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Math</td>
+              <td><input type="number" name="math" min="0" max="100" required></td>
+            </tr>
+            <tr>
+              <td>Science</td>
+              <td><input type="number" name="science" min="0" max="100" required></td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td><input type="number" name="english" min="0" max="100" required></td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td><input type="number" name="history" min="0" max="100" required></td>
+            </tr>
+            <tr>
+              <td>Computer</td>
+              <td><input type="number" name="computer" min="0" max="100" required></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <br>
+      <button type="submit">Submit Marks</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 School Records</p>
+  </footer>
+
+</body>
+</html>
+
+    
+    
+</body>
+</html>
