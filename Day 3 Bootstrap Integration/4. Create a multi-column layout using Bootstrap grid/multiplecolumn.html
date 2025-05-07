@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple column layout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-6Ere/9Ghvqnm0T2uHRNwKZzZKleI52EDbaj4Wxv0S/XZ7y1hqzYlZlNWvlYcHciJ"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MySite</a>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container mt-4">
+
+    <!-- Alert Message -->
+    <div class="alert alert-info" role="alert">
+      Welcome to the student registration page!
+    </div>
+
+    <!-- Multi-Column Layout -->
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-md-4">
+        <h4>Instructions</h4>
+        <p>Fill out the form to register. Make sure all fields are complete.</p>
+      </div>
+
+      <!-- Middle Column (Form) -->
+      <div class="col-md-4">
+        <h4>Registration Form</h4>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-4">
+        <h4>Why Register?</h4>
+        <ul>
+          <li>Get course updates</li>
+          <li>Track your progress</li>
+          <li>Receive certifications</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
